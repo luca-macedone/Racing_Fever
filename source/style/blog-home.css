@@ -16,7 +16,7 @@ blu-grigio      rgba(94, 98, 155, 1)
 
 .main-container .banner-title {
 
-    margin-top: 40px;
+    margin-top: 60px;
 
 }
 
@@ -24,7 +24,7 @@ blu-grigio      rgba(94, 98, 155, 1)
 
     width: 90%;
 
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     flex-direction: column;
     justify-content: flex-start;
