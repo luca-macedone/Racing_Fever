@@ -1,0 +1,162 @@
+/* 
+
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans Mono', monospace;
+
+rosso salmone   rgba(235, 69, 95, 1)
+bianco panna    rgba(252, 255, 231, 1)
+azzurro chiaro  rgba(186, 215, 233, 1)
+blu notte       rgba(43, 52, 103, 1)
+blu-grigio      rgba(94, 98, 155, 1)
+
+*/
+
+@import "main.css";
+
+
+.img-container {
+    
+    width: 100%;
+    height: 50vh;
+
+    border: solid 6px rgba(235, 69, 95, 1);
+    
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image {
+
+    height: 98%;
+    width: 99%;
+    
+    background-image: url(../data/images/foto-aziendale-stock.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    filter:blur(12px);
+
+}
+ 
+.main-title {
+
+    text-align: center;
+
+    color: rgba(235, 69, 95, 1);
+
+    position: absolute;
+    top: 50%;
+    
+}
+
+.img-container:hover .image {
+
+    filter: blur(0);
+
+    transition: .4s;
+
+}
+
+.banner-title {
+
+    margin-bottom: 0;
+
+}
+
+.banner-text {
+
+    width: 90%;
+    text-align:justify;
+
+}
+
+.team-profiles-container {
+
+    height: fit-content;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    gap: 40px;
+
+}
+
+.team-profile-box  {
+
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.team-profile-img {
+
+    height: 20rem;
+    width: 20rem;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+    border: solid 6px rgba(235, 69, 95, 1);
+    
+
+    background-image: url(../data/images/random-guy-stock.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.team-profile-quote {
+
+    line-height: 38px;
+
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 16px;
+
+}
+
+@media screen and (min-width: 1440px){
+
+    .team-profile-box {
+
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+
+    }
+
+    .team-profile-img {
+
+        flex: 1;
+
+    }
+
+    .team-profile-quote {
+
+        flex: 3;
+
+    }
+
+    .inverted {
+
+        flex-direction: row-reverse;       
+    
+    }
+    
+}

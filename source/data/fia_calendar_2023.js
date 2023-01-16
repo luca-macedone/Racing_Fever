@@ -1,0 +1,107 @@
+const FIA_F1_CHAMPIONSHIP = [
+    "05/03/2023	BHR	Grand Prix of Bahrain",
+    "19/03/2023	SAU	Grand Prix of Saudi Arabia",
+    "02/04/2023	AUS	Grand Prix of Australia",
+    "30/04/2023	AZE	Grand Prix of Azerbaijan",
+    "07/05/2023	USA	Grand Prix of Miami",
+    "21/05/2023	ITA	Grand Prix of Emilia Romagna",
+    "28/05/2023	MCO	Grand Prix of Monaco",
+    "04/06/2023	ESP	Grand Prix of Spain",
+    "18/06/2023	CAN	Grand Prix of Canada",
+    "02/07/2023	AUT	Grand Prix of Austria",
+    "09/07/2023	GBR	Grand Prix of United Kingdom",
+    "23/07/2023	HUN	Grand Prix of Hungary",
+    "30/07/2023	BEL	Grand Prix of Belgium",
+    "27/08/2023	NLD	Grand Prix of Netherlands",
+    "03/09/2023	ITA	Grand Prix of Italy",
+    "17/09/2023	SGP	Grand Prix of Singapore", 
+    "24/09/2023	JPN	Grand Prix of Japan",
+    "08/10/2023	QAT	Grand Prix of Qatar",
+    "22/10/2023	USA	Grand Prix of the USA",
+    "29/10/2023	MEX	Grand Prix of Mexico",
+    "05/11/2023	BRA	Grand Prix of Brazil",
+    "18/11/2023	USA	Grand Prix of Las Vegas",
+    "26/11/2023	ARE	Grand Prix of Abu Dhabi",
+];
+
+const FIA_ENDURANCE_CHAMPIONSHIP = [
+    "17/03/2023	USA	1000 Miles of Sebring *",
+    "16/04/2023	PRT	6 Hours of Portimão *",
+    "29/04/2023	BEL	Total Energies 6 Hours of Spa Francorchamps *",
+    "10-11/06/2023  FRA	24 Hours of Le Mans",
+    "09/07/2023	ITA	6 Hours of Monza *",
+    "10/09/2023	JPN	6 Hours of Fuji",
+    "04/11/2023	BHR	8 Hours of Bahrain*",
+];
+
+const FIA_FE_CHAMPIONSHIP = [
+    "14/01/2023	MEX	Mexico City",
+    "27-28/01/2023	SAU	Diriyah",
+    "11/02/2023	IND	Hyderabad **",
+    "25/02/2023	ZAF	Cape Town **",
+    "25/03/2023	BRA	Sao Paulo **",
+    "22-23/04/2023	DEU	Berlin",
+    "06/05/2023	MCO	Monaco",
+    "03-04/06/2023	IDN	Jakarta", 
+    "24/06/2023	USA	Portland **",
+    "15-16/07/2023	ITA	Rome",
+    "29-30/07/2023	GBR	London",
+];
+
+const FIA_F2_CHAMPIONSHIP = [
+    "03-05/03/2023	BHR	Sakhir *",
+    "17-19/03/2023	SAU	Jeddah *",
+    "31/03–02/04/2023	AUS	Melbourne",
+    "28-30/04/2023	AZE	Baku *",
+    "19-21/05/2023	ITA	Imola",
+    "25-28/05/2023	MCO	Monaco",
+    "02-04/06/2023	ESP	Barcelona *",
+    "30/06–02/07/2023	AUT	Spielberg",
+    "07-09/07/2023	GBR	Silverstone *",
+    "21-23/07/2023	HUN	Budapest",
+    "28-30/07/2023	BEL	Spa-Francorchamps",
+    "25-27/08/2023	NLD	Zandvoort *",
+    "01-03/09/2023	ITA	Monza",
+    "24-26/11/2023	UAE	Yas Marina *",
+];
+
+const FIA_F3_CHAMPIONSHIP = [
+    "03-05/03/2023	BHR	Sakhir *",
+    "31/03–02/04/2023	AUS	Melbourne",
+    "19-21/05/2023	ITA	Imola",
+    "25-28/05/2023	MCO	Monaco",
+    "02-04/06/2023	ESP	Barcelona *",
+    "30/06–02/07/2023	AUT	Spielberg",
+    "07-09/07/2023	GBR	Silverstone *",
+    "21-23/07/2023	HUN	Budapest",
+    "28-30/07/2023	BEL	Spa-Francorchamps",
+    "01-03/09/2023	ITA	Monza",
+];
+
+const FIA_WORLD_RALLY_CHAMPIONSHIP = [
+    "22/01/2023	MCO	Rally Monte Carlo",
+    "12/02/2023	SWE	Rally of Sweden Jun",
+    "19/03/2023	MEX	Rally of Mexico",
+    "23/04/2023	HRV	Rally of Croatia Jun",
+    "14/05/2023	PRT	Rally of Portugal",
+    "04/06/2023	ITA	Rally of Italy Jun",
+    "25/06/2023	KEN	Rally of Kenya",
+    "23/07/2023	EST	Rally of Estonia Jun",
+    "06/08/2023	FIN	Rally of Finland",
+    "10/09/2023	GRC	Rally of Greece Jun",
+    "01/10/2023	CHL	Rally of Chile",
+    "29/10/2023	DEU	Central European Rally",
+    "19/11/2023	JPN	Rally of Japan",
+];
+
+const FIA_HISTORIC_RALLY_CHAMPIONSHIP = [
+    "16-19/03/2023	ESP	71 Rally Motul Costa Brava",
+    "20-22/04/2023	CZE	31. Historic Vltava Rallye",
+    "11-13/05/2023	ESP	14 Rallye de Asturias Histórico",
+    "01-03/06/2023	CHE	Rallye du Chablais VHC",
+    "22-24/06/2023	HUN	56th Mecsek Rallye",
+    "13-15/07/2023	AUT	Rallye Weiz",
+    "10-12/08/2023	FIN	Lahti Historic Rally",
+    "05-08/10/2023	ITA	38° Sanremo Rallye Storico",
+    "02-04/11/2023	GRC	Historic Acropolis Rally",
+];

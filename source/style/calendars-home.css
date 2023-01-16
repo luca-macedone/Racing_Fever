@@ -1,0 +1,56 @@
+/* 
+
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans Mono', monospace;
+
+rosso salmone   rgba(235, 69, 95, 1)
+bianco panna    rgba(252, 255, 231, 1)
+azzurro chiaro  rgba(186, 215, 233, 1)
+blu notte       rgba(43, 52, 103, 1)
+blu-grigio      rgba(94, 98, 155, 1)
+
+*/
+
+@import "main.css";
+
+.calendar-container {
+
+    justify-content: center;
+
+}
+
+#f1-calendar-box {
+
+    background-image: url(../data/images/f1-calendar-banner.png);
+
+}
+#f2-calendar-box {
+
+    background-image: url(../data/images/f2-calendar-banner.png);
+
+}
+#f3-calendar-box {
+
+    background-image: url(../data/images/f3-calendar-banner.png);
+
+}
+#fe-calendar-box {
+
+    background-image: url(../data/images/fe-calendar-banner.png);
+
+}
+#wec-calendar-box {
+
+    background-image: url(../data/images/wec-calendar-banner.png);
+
+}
+#wrc-calendar-box {
+
+    background-image: url(../data/images/wrc-calendar-banner.png);
+
+}
+#hr-calendar-box {
+
+    background-image: url(../data/images/historical-rally-calendar-banner.png);
+
+}
