@@ -115,7 +115,7 @@ function createNews(event){
 
         <div class="news-box" id="${newsId}">
 
-            <a class="news-link" href="#">
+            <a class="news-link" href="/source/data/pages/newspage_test.html">
 
                 <div class="news-header">
 

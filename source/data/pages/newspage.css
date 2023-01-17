@@ -1,0 +1,209 @@
+/* 
+
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans Mono', monospace;
+
+rosso salmone   rgba(235, 69, 95, 1)
+bianco panna    rgba(252, 255, 231, 1)
+azzurro chiaro  rgba(186, 215, 233, 1)
+blu notte       rgba(43, 52, 103, 1)
+blu-grigio      rgba(94, 98, 155, 1)
+
+*/
+
+@import "../../style/main.css";
+
+.main-container {
+
+    position: relative;
+
+}
+
+.see-more-link {
+
+    position: absolute;
+    top: -1rem;
+    left: 5rem;
+
+}
+
+.see-more-link * {
+
+    margin-top: 40px;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    color: rgba(235, 69, 95, 1);
+
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+.article-box {
+
+    height: fit-content;
+    width: 90%;
+
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+
+    gap: 40px;
+
+}
+
+.article-h1 {
+
+    height: fit-content;
+    width: 100%;
+
+    margin: 2rem 0 1rem;
+
+    text-align: center;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.article-h2 {
+
+    height: fit-content;
+    width: 100%;
+
+    margin-bottom: .5rem;
+
+    text-align: justify;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.article-p {
+
+    text-align: justify;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.article-picture {
+
+    flex: 1;
+
+    max-height: 100%;
+
+    border-radius: 20px;
+    border: solid rgba(235, 69, 95, 1) 6px;
+
+}
+
+.article-main-picture {
+
+    flex: 1;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 20px;
+    border: solid rgba(235, 69, 95, 1) 6px;
+
+}
+
+.article-photo-box {
+    
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    gap: 40px;
+
+    margin-bottom: 20px;
+
+
+}
+
+.article-photo-box .article-picture {
+
+    width: 33%;
+    
+}
+
+.full {
+
+    width: 100%;
+
+}
+
+@media screen and (max-width: 1439px) {
+
+    .see-more-link {
+
+        position: static;
+
+        margin: 1rem 0 0 0;
+
+    }
+
+    .article-h1 {
+
+        margin-top: 0;
+
+    }
+
+    .article-picture {
+    
+        width: 100%;
+    
+    }
+
+    .half {
+
+        width: 100%;
+
+    }
+
+    .article-photo-box {
+
+        flex-direction: column;
+
+    }
+
+    .article-photo-box .article-picture {
+
+        width: 100%;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+
+    .article-picture {
+
+        flex: 1;
+        width: 50%;
+    
+    }
+
+    .half {
+
+        flex: 1;
+        width: 50%;
+
+    }
+
+}
