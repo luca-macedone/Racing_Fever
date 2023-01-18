@@ -15,8 +15,8 @@ dropDownMenuBtn.addEventListener("click", toggleMenu);
 let path = window.location.pathname;
 let page = path.split("/").pop();
 
-window.onload = function(){
-    
+document.addEventListener("DOMContentLoaded", function() {
+
     if(page == "index.html"){
     
         printNews(6, newsContainer);
@@ -27,7 +27,21 @@ window.onload = function(){
     
     }
 
-}
+});
+
+// window.onload = function(){
+    
+//     if(page == "index.html"){
+    
+//         printNews(6, newsContainer);
+    
+//     }else if(page == "blog-home.html"){
+    
+//         printNews("all", blog);
+    
+//     }
+
+// }
 
 const toTopButton = document.querySelector(".to-top-button");
 
