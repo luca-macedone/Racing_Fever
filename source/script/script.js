@@ -29,8 +29,22 @@ let page = path.split("/").pop();
 
 // });
 
-if(document.readyState == "loading"){
+// if(document.readyState == "loading"){
     
+//     if(page == "index.html"){
+    
+//         printNews(6, newsContainer);
+    
+//     }else if(page == "blog-home.html"){
+    
+//         printNews("all", blog);
+    
+//     }
+
+// }
+
+window.onpageshow = function(){
+
     if(page == "index.html"){
     
         printNews(6, newsContainer);
@@ -41,7 +55,7 @@ if(document.readyState == "loading"){
     
     }
 
-}
+};
 
 const toTopButton = document.querySelector(".to-top-button");
 
