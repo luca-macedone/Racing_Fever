@@ -4,7 +4,7 @@
  * 
  */
 
-const container = document.querySelector(".events-container");
+let container = document.querySelector(".events-container");
 
 let calendars_path = window.location.pathname;
 let calendars_page = calendars_path.split("/").pop();
@@ -15,6 +15,12 @@ switch(calendars_page){
         let f1_calendar = [];
         createRaces(FIA_F1_CHAMPIONSHIP, f1_calendar);
         createCalendar(f1_calendar, container);
+        window.onbeforeunload = function(){
+    
+            f1_calendar.length = 0;
+            container.innerHTML = "";
+
+        };
         break;
     
     case "calendar_f2.html":
@@ -22,43 +28,80 @@ switch(calendars_page){
         createRaces(FIA_F2_CHAMPIONSHIP, f2_calendar);
         console.log(f2_calendar);
         createCalendar(f2_calendar, container);
+        window.onbeforeunload = function(){
+    
+            f1_calendar.length = 0;
+            container.innerHTML = "";
+
+        };
         break;
     
     case "calendar_f3.html":
         let f3_calendar = [];
         createRaces(FIA_F3_CHAMPIONSHIP, f3_calendar);
         createCalendar(f3_calendar, container);
+        window.onbeforeunload = function(){
+    
+            f1_calendar.length = 0;
+            container.innerHTML = "";
+
+        };
         break;
     
     case "calendar_fe.html":
         let fe_calendar = [];
         createRaces(FIA_FE_CHAMPIONSHIP, fe_calendar);
         createCalendar(fe_calendar, container);
+        window.onbeforeunload = function(){
+    
+            f1_calendar.length = 0;
+            container.innerHTML = "";
+
+        };
         break;
     
     case "calendar_wrc.html":
         let wrc_calendar = [];
         createRaces(FIA_WORLD_RALLY_CHAMPIONSHIP, wrc_calendar);
         createCalendar(wrc_calendar, container);
+        window.onbeforeunload = function(){
+    
+            f1_calendar.length = 0;
+            container.innerHTML = "";
+
+        };
         break;
     
     case "calendar_wec.html":
         let wec_calendar = [];
         createRaces(FIA_ENDURANCE_CHAMPIONSHIP, wec_calendar);
         createCalendar(wec_calendar, container);
+        window.onbeforeunload = function(){
+    
+            f1_calendar.length = 0;
+            container.innerHTML = "";
+
+        };
         break;
     
     case "calendar_his.html":
         let his_calendar = [];
         createRaces(FIA_HISTORIC_RALLY_CHAMPIONSHIP, his_calendar);
         createCalendar(his_calendar, container);
+        window.onbeforeunload = function(){
+    
+            f1_calendar.length = 0;
+            container.innerHTML = "";
+
+        };
         break;
 
-}
-
+};
 
 // FUNZIONI
 function createRaces(listOfEvents, calendar){
+
+    calendar.length = 0;
 
     for(let i=0; i<listOfEvents.length; i++){
 
@@ -75,7 +118,7 @@ function createRaces(listOfEvents, calendar){
         circuit_nation = evArray[1];
         circuit_nm = evArray[2];
 
-        if(evArray[evArray.length-1].includes("*")){
+        if(evArray[evArray.length-1].includes("**")){
 
             asn_confirm = true;
             
@@ -85,12 +128,15 @@ function createRaces(listOfEvents, calendar){
 
         }
         
-        if(evArray[evArray.length-1].includes('**')){
+        if(evArray[evArray.length-1].includes('*')){
             
             homolog = true;
 
-            evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
-            // evArray[evArray.length-1] = evArray[evArray.length-1].replace("**",'');
+            let ns = evArray[evArray.length-1];
+            evArray[evArray.length-1] = ns.replace("*","");
+            //evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
+            //evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
+            
             
         }
         
@@ -98,7 +144,9 @@ function createRaces(listOfEvents, calendar){
 
             junior = true;
 
-            evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
+            let ns = evArray[evArray.length-1];
+            evArray[evArray.length-1] = ns.replace("Jun","");
+            //evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
 
         }
 
@@ -120,8 +168,6 @@ function createRaces(listOfEvents, calendar){
     }
 
 }
-
-
 
 function createEvent(event){
     let asnClass = "event-asn-confirmation";
