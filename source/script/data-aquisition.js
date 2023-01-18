@@ -78,22 +78,31 @@ function createRaces(listOfEvents, calendar){
         if(evArray[evArray.length-1].includes("*")){
 
             asn_confirm = true;
+            
+            let ns = evArray[evArray.length-1];
+            evArray[evArray.length-1] = ns.replace("**","");
+            //evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
 
-            evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length - 2);
-
-        }else if(evArray[evArray.length-1].includes("**")){
+        }
+        
+        if(evArray[evArray.length-1].includes('**')){
             
             homolog = true;
 
-            evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length - 3);
+            evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
+            // evArray[evArray.length-1] = evArray[evArray.length-1].replace("**",'');
             
-        }else if(evArray[evArray.length-1].includes("Jun")){
+        }
+        
+        if(evArray[evArray.length-1].includes("Jun")){
 
             junior = true;
 
-            evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length - 4);
+            evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
 
         }
+
+        console.log(evArray);
 
         let race = {
 
@@ -165,6 +174,8 @@ function createEvent(event){
 };
 
 function createCalendar(eventsList, eventsBox){
+
+    eventsBox.innerHTML = "";
 
     for(let i=0; i<eventsList.length; i++){
 
