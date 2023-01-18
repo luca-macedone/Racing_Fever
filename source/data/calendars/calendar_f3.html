@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Style -->
-    <link rel="stylesheet" href="./source/style/calendars-home.css">
+    <link rel="stylesheet" href="./calendars.css">
 
-    <title>Racing Fever | Calendars</title>
-    <meta name="description" content="Main page of the updated calendars of the principal motorsport racing events.">
+    <title>Race Fever | F3 Calendar</title>
 
     <link rel="shortcut icon" href="./source/data/images/rf-icon.png" type="image/x-icon">
 </head>
@@ -61,57 +60,21 @@
 
     <main class="main-container">
 
-        <section class="welcome-banner">
+        <p class="see-more-link">
 
-            <button id="close-banner-button">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+            <a href="/calendars-home.html">Back to calendars</a>
 
-            <h4 class="banner-title">Calendars</h4>
+        </p>
 
-            <p class="banner-text">Here you can find all the calendars of the <span class="enfasis">upcoming major racing events</span>.<br>Click on the calendar and if you want <span class="enfasis">link </span>it <span class="enfasis">to your iCalendar!</span></p>
-        
-        </section>
+        <h4 class="banner-title">
+            FIA FORMULA 3 2023 CALENDAR
+        </h4>
 
-        <section class="calendars-section">
+        <div class="events-container">
 
-            <h4 class="banner-title">
-                FIA 2023 Calendars
-            </h4>
-
-            <div class="calendar-container">
-
-                <a href="/source/data/calendars/calendar_f1.html" class="calendar-box" id="f1-calendar-box">
-                    <h3 class="calendar-title">FIA F1 Calendar 2023</h3>
-                </a>
-
-                <a href="/source/data/calendars/calendar_wec.html" class="calendar-box" id="wec-calendar-box">
-                    <h3 class="calendar-title">FIA WEC Calendar 2023</h3>
-                </a>
-
-                <a href="/source/data/calendars/calendar_wrc.html" class="calendar-box" id="wrc-calendar-box">
-                    <h3 class="calendar-title">FIA WRC Calendar 2023</h3>
-                </a>
-
-                <a href="/source/data/calendars/calendar_fe.html" class="calendar-box" id="fe-calendar-box">
-                    <h3 class="calendar-title">FIA Formula E Calendar 2023</h3>
-                </a>
-
-                <a href="/source/data/calendars/calendar_f2.html" class="calendar-box" id="f2-calendar-box">
-                    <h3 class="calendar-title">FIA F2 Calendar 2023</h3>
-                </a>
-
-                <a href="/source/data/calendars/calendar_f3.html" class="calendar-box" id="f3-calendar-box">
-                    <h3 class="calendar-title">FIA F3 Calendar 2023</h3>
-                </a>
-                
-                <a href="/source/data/calendars/calendar_his.html" class="calendar-box" id="hr-calendar-box">
-                    <h3 class="calendar-title">FIA Historical Rally Calendar 2023</h3>
-                </a>
-
-            </div>
-
-        </section>
+            
+            
+        </div>
 
     </main>
 
@@ -155,6 +118,9 @@
     </button>
 
     <!-- Script -->
-    <script src="./source/script/script.js"></script>
+    <script src="/source/data/fia_calendar_2023.js"></script>
+    <script src="/source/script/data-aquisition.js"></script>
+    <script src="/source/script/script.js"></script>
+
 </body>
 </html>

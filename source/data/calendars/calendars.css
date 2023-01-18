@@ -1,0 +1,162 @@
+/* 
+
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans Mono', monospace;
+
+rosso salmone   rgba(235, 69, 95, 1)
+bianco panna    rgba(252, 255, 231, 1)
+azzurro chiaro  rgba(186, 215, 233, 1)
+blu notte       rgba(43, 52, 103, 1)
+blu-grigio      rgba(94, 98, 155, 1)
+
+*/
+
+@import "/source/style/main.css";
+
+.main-container {
+
+    padding: 40px 0 40px;
+
+    position: relative;
+
+}
+
+.banner-title {
+
+    margin: 0;
+
+}
+
+.events-container {
+    
+    height: fit-content;
+    width: 90%;
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+.event-box {
+
+    height: max-content;
+
+    border: solid rgba(235, 69, 95, 1) 6px;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+.event-header {
+
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.event-header * {
+
+    font-size: 24px;
+
+}
+
+.event-nation {
+
+    font-weight: 900;
+
+}
+
+.event-circuit {
+
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.event-asn-confirmation, .event-circuit-homologation, .event-junior-wrc {
+
+    font-size: 14px;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.see-more-link {
+
+    position: absolute;
+    top: -1rem;
+    left: 5rem;
+
+}
+
+.see-more-link * {
+
+    font-size: 20px;
+    font-weight: 400;
+
+    color: rgba(235, 69, 95, 1);
+
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+
+}
+
+@media screen and (max-width: 1439px) {
+    
+    .see-more-link {
+
+        position: static;
+
+        margin: 0;
+
+    }
+
+    .events-container {
+
+        flex-direction: column;
+
+    }
+
+    .event-box {
+
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .events-container {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .event-box {
+
+        width: 48%;
+    }
+
+}

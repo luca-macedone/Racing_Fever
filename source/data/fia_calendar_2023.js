@@ -31,7 +31,7 @@ const FIA_ENDURANCE_CHAMPIONSHIP = [
     "10-11/06/2023  FRA	24 Hours of Le Mans",
     "09/07/2023	ITA	6 Hours of Monza *",
     "10/09/2023	JPN	6 Hours of Fuji",
-    "04/11/2023	BHR	8 Hours of Bahrain*",
+    "04/11/2023	BHR	8 Hours of Bahrain *",
 ];
 
 const FIA_FE_CHAMPIONSHIP = [

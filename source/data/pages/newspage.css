@@ -131,15 +131,36 @@ blu-grigio      rgba(94, 98, 155, 1)
     
     gap: 40px;
 
-    margin-bottom: 20px;
-
-
 }
 
 .article-photo-box .article-picture {
 
     width: 33%;
     
+}
+
+.article-footer {
+
+    width: 100%;
+
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 14px;
+    font-weight: 300;
+
+    color: rgba(43, 52, 103, 1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#article-date, #article-autor {
+
+    font-size: 16px;
+    font-weight: 500;
+
 }
 
 .full {
