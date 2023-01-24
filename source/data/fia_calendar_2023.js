@@ -28,7 +28,7 @@ const FIA_ENDURANCE_CHAMPIONSHIP = [
     "17/03/2023	USA	1000 Miles of Sebring *",
     "16/04/2023	PRT	6 Hours of Portimão *",
     "29/04/2023	BEL	Total Energies 6 Hours of Spa Francorchamps *",
-    "10-11/06/2023  FRA	24 Hours of Le Mans",
+    "10-11/06/2023\tFRA\t24 Hours of Le Mans", 
     "09/07/2023	ITA	6 Hours of Monza *",
     "10/09/2023	JPN	6 Hours of Fuji",
     "04/11/2023	BHR	8 Hours of Bahrain *",

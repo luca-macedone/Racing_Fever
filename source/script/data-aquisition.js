@@ -116,41 +116,40 @@ function createRaces(listOfEvents, calendar){
 
         date = evArray[0];
         circuit_nation = evArray[1];
-        circuit_nm = evArray[2];
-
+        
         if(evArray[evArray.length-1].includes("**")){
-
-            asn_confirm = true;
             
             let ns = evArray[evArray.length-1];
-            evArray[evArray.length-1] = ns.replace("**","");
-            //evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
-
+            
+            evArray[evArray.length-1] = ns.replace('**'," ");
+            
+            asn_confirm = true;
+            
         }
         
         if(evArray[evArray.length-1].includes('*')){
             
-            homolog = true;
-
-            let ns = evArray[evArray.length-1];
-            evArray[evArray.length-1] = ns.replace("*","");
-            //evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
-            //evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
             
+            let ns = evArray[evArray.length-1];
+            
+            evArray[evArray.length-1] = ns.replace("*"," ");
+            
+            homolog = true;
             
         }
         
         if(evArray[evArray.length-1].includes("Jun")){
-
-            junior = true;
-
+            
+            
             let ns = evArray[evArray.length-1];
-            evArray[evArray.length-1] = ns.replace("Jun","");
-            //evArray[evArray.length-1] = evArray[evArray.length-1].slice(0, evArray[evArray.length-1].length-1);
-
+            
+            evArray[evArray.length-1] = ns.replace("Jun"," ");
+            
+            junior = true;
+            
         }
-
-        console.log(evArray);
+        
+        circuit_nm = evArray[2];
 
         let race = {
 
@@ -164,7 +163,8 @@ function createRaces(listOfEvents, calendar){
         }
 
         calendar.push(race);
-
+        console.log(evArray);
+    
     }
 
 }
